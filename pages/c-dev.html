@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>the wakpages | c dev</title>
+    <link href="../style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>c dev</h1>
+      <nav class="navbar">
+        <fieldset>
+          <legend>external links</legend>
+
+          <button type="button">
+            <a href="https://c-language.org/">c language website</a>
+          </button>
+
+          <button type="button">
+            <a href="https://ia600600.us.archive.org/31/items/hybridphilosophy-collection/the_c_programming_language_2.pdf">c book</a>
+          </button>
+        </fieldset>
+
+        <fieldset>
+          <legend>internal links</legend>
+
+          <button type="button">
+            <a href="#rust-fellings">my rust feelings</a>
+          </button>
+
+          <button type="button">
+            <a href="#style">coding style</a>
+          </button>
+        </fieldset>
+      </nav>
+    </header>
+
+    <hr>
+    <main>
+      <div id="rust-feelings">
+        <h2>my rust feelings</h2>
+
+        <h3>what i don't like</h3>
+
+        <ol>
+          <li>too much abstraction</li>
+          <li>overcomplicated syntax</li>
+          <li>unnecessary complexity</li>
+        </ol>
+      </div>
+
+      <div id="style">
+      <h2>coding style</h2>
+
+        <pre>
+i follow <b>very strict</b> rules when it comes to styling my c code,
+in this section i'll explain my rules.
+        </pre>
+
+        <fieldset>
+          <legend>my <i>.clang-format</i></legend>
+
+          <pre>
+            <code>
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+BreakBeforeBraces: Allman
+
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+ColumnLimit: 100
+            </code>
+          </pre>
+        </fieldset>
+
+        <p class="info">i try to use the file but not sure if <i>nvchad</i> uses it correctly...</p>
+
+        <h3>explaining my <i>.clang-format</i></h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>option</th>
+              <th>value</th>
+              <th>description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>BasedOnStyle</code></td>
+              <td><code>LLVM</code></td>
+              <td>uses llvm as the base formatting style</td>
+            </tr>
+            <tr>
+              <td><code>IndentWidth</code></td>
+              <td><code>4</code></td>
+              <td>sets indentation to four spaces</td>
+            </tr>
+            <tr>
+              <td><code>TabWidth</code></td>
+              <td><code>4</code></td>
+              <td>sets tab width to four columns</td>
+            </tr>
+            <tr>
+              <td><code>UseTab</code></td>
+              <td><code>Never</code></td>
+              <td>always uses spaces instead of tab characters</td>
+            </tr>
+            <tr>
+              <td><code>BreakBeforeBraces</code></td>
+              <td><code>Allman</code></td>
+              <td>places opening braces on a new line</td>
+            </tr>
+            <tr>
+              <td><code>AllowShortFunctionsOnASingleLine</code></td>
+              <td><code>None</code></td>
+              <td>prevents functions from being placed on a single line</td>
+            </tr>
+            <tr>
+              <td><code>AllowShortIfStatementsOnASingleLine</code></td>
+              <td><code>Never</code></td>
+              <td>prevents short if statements from being placed on a single line</td>
+            </tr>
+            <tr>
+              <td><code>AllowShortLoopsOnASingleLine</code></td>
+              <td><code>false</code></td>
+              <td>prevents short loops from being placed on a single line</td>
+            </tr>
+            <tr>
+              <td><code>ColumnLimit</code></td>
+              <td><code>100</code></td>
+              <td>limits lines to 100 columns</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>i feel like the <i>.clang-format</i> works for me, i know it's not the best; but it works!</p>
+      </div>
+    </main>
+
+    <hr>
+    <footer>
+      <p>by wak6817 (duh)</p>
+    </footer>
+  </body>
+</html>
